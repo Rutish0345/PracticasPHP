@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="titulo">Registro</h1>
+    <form action="./procesarr.php" method="post">
+        <label class="text" for="name"> Usuario: </label><br>
+        <input type="text" name="usuario" requiered pattern="[a-zA-Z\s]+" required
+        placeholder="usuario" title="Este campo solo recibe letras y espacios"><br>
+       <label class="text" for="Pass">Contraseña: </label><br>
+        <input type="password" name="contra" required placeholder="Contraseña"><br>
+        <label class="text" for="edad">Edad: </label><br> 
+        <input type="number" name="edad" required placeholder="Edad"><br>
+         <br><br>
+
+        <input class="Boton" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
